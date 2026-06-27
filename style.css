@@ -211,6 +211,19 @@ a {
   margin-top: 18px;
 }
 
+.section-subtitle {
+  font-size: 30px;
+  color: #111827;
+  margin-top: 56px;
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.section-subtitle:first-of-type {
+  margin-top: 40px;
+}
+
 .page-intro {
   max-width: 1000px;
   margin-bottom: 40px;
@@ -329,6 +342,7 @@ li {
 .project-detail-card p {
   color: #4b5563;
   font-size: 16px;
+  margin-bottom: 16px;
 }
 
 .project-date {
@@ -385,6 +399,53 @@ li {
   color: #4b5563;
   font-size: 13px;
   line-height: 1.4;
+}
+
+.project-media-grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.slideshow-card .slideshow-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  background: #f3f4f6;
+}
+
+.slideshow-card .slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slideshow-card .slide.active {
+  opacity: 1;
+}
+
+.project-media img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-media > img {
+  aspect-ratio: 4 / 3;
+  border-radius: 16px 16px 0 0;
+}
+
+@media (max-width: 992px) {
+  .project-media-grid-three {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-links {

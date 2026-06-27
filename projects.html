@@ -30,10 +30,13 @@
       <h1 class="page-title">Projects</h1>
 
       <p class="page-intro">
-        Selected engineering projects covering renewable energy infrastructure,
-        hydropower system integration, control optimization, and electromechanical
-        system modeling.
+        Selected engineering projects covering professional electromechanical system
+        integration, renewable energy infrastructure, control optimization, PCB hardware
+        design, and engineering research.
       </p>
+
+      <!-- Work Projects -->
+      <h2 class="section-subtitle">Work Projects</h2>
 
       <div class="timeline">
         <div class="timeline-item">
@@ -56,7 +59,15 @@
               renewable energy generation asset.
             </p>
 
-            <div class="project-media-grid">
+            <p>
+              Built and reviewed electromechanical layout models to support system
+              arrangement, equipment positioning, piping interfaces, and project-level
+              coordination.
+            </p>
+
+            <!-- Three visual blocks only -->
+            <div class="project-media-grid project-media-grid-three">
+              <!-- Block 1: Static completed plant photo -->
               <figure class="project-media">
                 <img
                   src="assets/images/Hydraulic-power-plant/HU-SHAN/plant-result.webp"
@@ -67,67 +78,50 @@
                 </figcaption>
               </figure>
 
-              <figure class="project-media portrait">
-                <img
-                  src="assets/images/Hydraulic-power-plant/HU-SHAN/field-work.jpg"
-                  alt="Field commissioning and electrical cabinet inspection"
-                />
-                <figcaption>
-                  Field commissioning and electrical cabinet inspection.
-                </figcaption>
-              </figure>
-
-              <figure class="project-media">
-                <img
-                  src="assets/images/Hydraulic-power-plant/HU-SHAN/international-cooperation.jpg"
-                  alt="On-site coordination with international engineering partners"
-                />
-                <figcaption>
-                  On-site coordination with international engineering partners.
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="project-subsection">
-              <h3>SOLIDWORKS System Modeling</h3>
-
-              <p>
-                Built and reviewed electromechanical layout models to support system
-                arrangement, equipment positioning, piping interfaces, and project-level
-                coordination.
-              </p>
-
-              <div class="project-media-grid solidworks-grid">
-                <figure class="project-media">
+              <!-- Block 2: Field work slideshow -->
+              <figure class="project-media slideshow-card">
+                <div class="slideshow-container" data-interval="2600">
                   <img
+                    class="slide active"
+                    src="assets/images/Hydraulic-power-plant/HU-SHAN/field-work.jpg"
+                    alt="Field commissioning and electrical cabinet inspection"
+                  />
+                  <img
+                    class="slide"
+                    src="assets/images/Hydraulic-power-plant/HU-SHAN/international-cooperation.jpg"
+                    alt="On-site coordination with international engineering partners"
+                  />
+                </div>
+
+                <figcaption>
+                  Field commissioning and international engineering coordination.
+                </figcaption>
+              </figure>
+
+              <!-- Block 3: SOLIDWORKS slideshow -->
+              <figure class="project-media slideshow-card">
+                <div class="slideshow-container" data-interval="2600">
+                  <img
+                    class="slide active"
                     src="assets/images/Hydraulic-power-plant/HU-SHAN/solidworks-overview.jpg"
                     alt="SOLIDWORKS hydropower system overview model"
                   />
-                  <figcaption>
-                    Overall hydropower system layout model.
-                  </figcaption>
-                </figure>
-
-                <figure class="project-media">
                   <img
+                    class="slide"
                     src="assets/images/Hydraulic-power-plant/HU-SHAN/solidworks-layout.jpg"
                     alt="SOLIDWORKS hydropower plant building and system layout"
                   />
-                  <figcaption>
-                    Building and equipment layout coordination.
-                  </figcaption>
-                </figure>
-
-                <figure class="project-media">
                   <img
+                    class="slide"
                     src="assets/images/Hydraulic-power-plant/HU-SHAN/solidworks-equipment.jpg"
                     alt="SOLIDWORKS turbine-generator equipment model"
                   />
-                  <figcaption>
-                    Turbine-generator equipment integration detail.
-                  </figcaption>
-                </figure>
-              </div>
+                </div>
+
+                <figcaption>
+                  SOLIDWORKS system modeling views for layout and equipment integration.
+                </figcaption>
+              </figure>
             </div>
 
             <div class="tag-list">
@@ -135,6 +129,7 @@
               <span>Electromechanical Integration</span>
               <span>SOLIDWORKS</span>
               <span>Commissioning</span>
+              <span>Automation</span>
               <span>Renewable Energy</span>
             </div>
 
@@ -174,6 +169,7 @@
               <span>Hydropower</span>
               <span>Automation</span>
               <span>Operational Stability</span>
+              <span>System Optimization</span>
             </div>
           </div>
         </div>
@@ -202,6 +198,42 @@
               <span>System Layout</span>
               <span>BOM Development</span>
               <span>Electromechanical Design</span>
+              <span>System Coordination</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research / School Team Projects -->
+      <h2 class="section-subtitle">Research / School Team Projects</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+
+          <div class="project-detail-card">
+            <div class="project-detail-header">
+              <div>
+                <p class="project-category">Student Engineering Team</p>
+                <h2>McGill Rocket Team — OCS2</h2>
+              </div>
+
+              <p class="project-date">McGill Rocket Team</p>
+            </div>
+
+            <p>
+              Designed a reusable CAN FD transceiver PCB block for the rocket avionics
+              system, focusing on schematic design, component selection, footprint
+              verification, PCB layout, and hardware integration readiness.
+            </p>
+
+            <div class="tag-list">
+              <span>PCB Design</span>
+              <span>Altium Designer</span>
+              <span>CAN FD</span>
+              <span>Avionics</span>
+              <span>Embedded Hardware</span>
+              <span>System Integration</span>
             </div>
           </div>
         </div>
@@ -240,5 +272,22 @@
   <footer>
     <p>© 2026 Jay Tsai</p>
   </footer>
+
+  <script>
+    document.querySelectorAll(".slideshow-container").forEach((container) => {
+      const slides = container.querySelectorAll(".slide");
+      const interval = 4500;
+
+      if (slides.length <= 1) return;
+
+      let currentIndex = 0;
+
+      setInterval(() => {
+        slides[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add("active");
+      }, interval);
+    });
+  </script>
 </body>
 </html>
